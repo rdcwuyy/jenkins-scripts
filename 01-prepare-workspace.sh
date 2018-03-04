@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+GIT_REPOSITORY=$1
+INSTANCE_NAME=$2
+
+cd ~/jenkins
+rm -rf $INSTANCE_NAME
+git clone $GIT_REPOSITORY $INSTANCE_NAME
+mkdir -p $INSTANCE_NAME/data/$INSTANCE_NAME
+mkdir -p $INSTANCE_NAME/save/$INSTANCE_NAME
+mkdir -p $INSTANCE_NAME/log/$INSTANCE_NAME 
