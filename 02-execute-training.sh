@@ -7,6 +7,6 @@ python --version
 pip list --format=columns
 
 cd ~/jenkins/$INSTANCE_NAME
-python train.py --data_dir ./data/$INSTANCE_NAME --save_dir ./save/$INSTANCE_NAME --log_dir ./log/$INSTANCE_NAME
+python train.py --data_dir ./data/$INSTANCE_NAME --save_dir ./save/$INSTANCE_NAME --log_dir ./logs/$INSTANCE_NAME
 
 cd 
